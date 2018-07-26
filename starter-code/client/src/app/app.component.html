@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<h3>List</h3>
+
+<!-- <button (click)="getRandomJoke()"> Get Random Joke </button> -->
+<div *ngFor = "let entries of list ">
+<p>{{entries.title }}</p>
+<p>{{entries.content}}</p>
+<p>{{ entries.date }}</p>
+<hr>
+</div>
